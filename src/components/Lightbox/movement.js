@@ -162,7 +162,7 @@ function Viewport(data) {
     }
 
     if (e.touches.length == 1) {
-      e.touches ? (e = e.touches[0]) : null;
+      e = e.touches[0];
 
       self.mouseX = e.pageX / self.touchSensivity;
       self.mouseY = e.pageY / self.touchSensivity;
