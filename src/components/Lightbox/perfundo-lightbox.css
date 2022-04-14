@@ -30,7 +30,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgb(255, 255, 255);
 }
 .perfundo__overlay:target,
 .perfundo__overlay.is-active {
