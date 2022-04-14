@@ -19,13 +19,7 @@ export const Lightbox: React.FC<LightboxProps> = ({
   decreaseLightboxIndex,
 }) => {
   return (
-    <div
-      id={`lightbox-${index}`}
-      className="perfundo__overlay"
-      onClick={() => {
-        window.location.assign('#lightbox-untarget');
-      }}
-    >
+    <div id={`lightbox-${index}`} className="perfundo__overlay">
       <Helmet>
         <script src="movement.js" type="text/javascript" />
       </Helmet>

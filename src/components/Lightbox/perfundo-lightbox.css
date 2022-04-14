@@ -72,7 +72,7 @@
  * 2. Trigger loading of the full sized image when the lightbox is opened.
  */
 .perfundo__figure {
-  display: none;
+  display: contents;
   /* [1] */
   margin: 1.5em;
   filter: drop-shadow(-50px 50px 50px gray);
@@ -91,7 +91,7 @@
  * 1. Make the image container responsive.
  */
 .perfundo__image {
-  /* max-width: 100%; */
+  max-width: 100%;
 
   /* [1] */
 }
