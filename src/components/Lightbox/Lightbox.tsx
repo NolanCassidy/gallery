@@ -33,7 +33,7 @@ export const Lightbox: React.FC<LightboxProps> = ({
         }}
       >
         <img className="perfundo__image" src={asset.image_url} loading="lazy" />
-        <div className="rnftg-text-gray-200">
+        <div className="rnftg-text-black nft-text">
           <div>{getAssetTitle(asset)}</div>
           <div>{asset.collection.name}</div>
         </div>
