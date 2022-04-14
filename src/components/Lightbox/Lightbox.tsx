@@ -28,7 +28,7 @@ export const Lightbox: React.FC<LightboxProps> = ({
           <div className="cube">
             <div className="side"> */}
       <figure
-        className="perfundo__content perfundo__figure cube-image"
+        className="perfundo__content perfundo__figure cube-image rotate"
         onClick={(evt) => {
           // Prevents clicks on the image triggering `#lightbox-untarget`.
           evt.stopPropagation();

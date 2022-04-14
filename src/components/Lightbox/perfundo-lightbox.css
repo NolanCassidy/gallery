@@ -337,3 +337,17 @@ object:hover {
     transform: scale(0.6, 0.6);
   }
 }
+
+/*Start of css for autorotate*/
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  to {
+    transform: rotate3d(0, 1, 0, 359deg);
+  }
+}
