@@ -340,7 +340,7 @@ object:hover {
 
 /*Start of css for autorotate*/
 .rotate {
-  animation: rotation 8s infinite linear;
+  animation: rotation 20s infinite linear !important;
 }
 
 @keyframes rotation {
