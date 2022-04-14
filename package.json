@@ -71,6 +71,8 @@
     "react": ">=16"
   },
   "dependencies": {
+    "@types/react-helmet": "^6.1.5",
+    "react-helmet": "^6.1.0",
     "react-intersection-observer": "^8.32.1"
   },
   "devDependencies": {

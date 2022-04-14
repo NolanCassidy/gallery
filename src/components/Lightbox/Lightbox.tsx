@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { OpenseaAsset } from '../../types/OpenseaAsset';
 import { getAssetTitle } from '../../utils';
 
@@ -25,19 +26,34 @@ export const Lightbox: React.FC<LightboxProps> = ({
         window.location.assign('#lightbox-untarget');
       }}
     >
-      <figure
-        className="perfundo__content perfundo__figure"
-        onClick={(evt) => {
-          // Prevents clicks on the image triggering `#lightbox-untarget`.
-          evt.stopPropagation();
-        }}
-      >
-        <img className="perfundo__image" src={asset.image_url} loading="lazy" />
-        <div className="rnftg-text-black nft-text">
-          <div>{getAssetTitle(asset)}</div>
-          <div>{asset.collection.name}</div>
+      <Helmet>
+        <script src="movement.js" type="text/javascript" />
+      </Helmet>
+      <div id="wrapper">
+        <div className="viewport">
+          <div className="cube">
+            <div className="side">
+              <figure
+                className="perfundo__content perfundo__figure cube-image"
+                onClick={(evt) => {
+                  // Prevents clicks on the image triggering `#lightbox-untarget`.
+                  evt.stopPropagation();
+                }}
+              >
+                <img
+                  className="perfundo__image"
+                  src={asset.image_url}
+                  loading="lazy"
+                />
+                <div className="rnftg-text-black nft-text">
+                  <div>{getAssetTitle(asset)}</div>
+                  <div>{asset.collection.name}</div>
+                </div>
+              </figure>
+            </div>
+          </div>
         </div>
-      </figure>
+      </div>
       <a
         href="#lightbox-untarget"
         className="perfundo__close perfundo__control"
