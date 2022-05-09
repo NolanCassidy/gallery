@@ -25,7 +25,7 @@ export const Lightbox: React.FC<LightboxProps> = ({
         <script src="movement.js" type="text/javascript" />
       </Helmet>
        <div id="wrapper">
-        <div className="viewport">
+        <div className="viewport>
           <div className="cube">
             <div className="side"> */}
       <figure
